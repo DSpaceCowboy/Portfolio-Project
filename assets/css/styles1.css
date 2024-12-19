@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.navbar {
+    padding: 0.6rem 0;
+
+}
+
+.navbar-nome {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+    background: rgba(128, 128, 128, 0.151);
+    border-radius: 2px;
+}
+
+.nav-item {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-link-custom a {
+    transition: ease-in-out 4s;
+}
+
+.nav-link-custom:hover {
+    background: rgba(128, 128, 128, 0.151);
+}
+
+.linha  {
+    border-top: solid black 2px;
+    margin-bottom: 24px;
+ }
+
+ .secao-1 {
+    margin-top: 100px;
+}
+
+.perfil {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.text-container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    max-width: 100%;
+}
+
+.no-hover {
+    cursor: default;
+}
+
+.paragrafo-perfil {
+    text-align: left;
+}
+
+.paragrafo-perfil p {
+    margin-bottom: 10px;
+}
+
+.usuario-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icone-usuario span {
+    padding: 3px;
+    font-size: 24px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.icone-usuario {
+    font-size: 24px;
+}
+
+svg.bi-person-fill, .bi-star {
+    width: 30px;
+    height: 30px;
+}
+
+.topico-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.topicos {
+    display: flex;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 10px;
+    background: rgba(33, 57, 196, 0.678);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.topicos:first-child {
+    margin-left: 0;
+}
+
+
+@media (max-width: 992px) {
+
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+
+    .navbar-nome {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        font-size: 20px;
+    }
+
+
+    .navbar-nav-mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav-mobile .nav-link {
+        margin-top: 10px;
+        padding: 0.2rem 1rem;
+    }
+
+    .icone-usuario span {
+        font-size: 16px;
+    }
+    
+    
+    .icone-usuario svg {
+        width: 16px; 
+        height: 16px; 
+    }
+    
+    /* Estilo para dispositivos móveis */
+    @media (max-width: 767px) {
+        .icone-usuario span {
+            font-size: 14px;
+        }
+        .icone-usuario svg {
+            width: 14px; 
+            height: 14px; 
+        }
+    }
+    
+}
+
